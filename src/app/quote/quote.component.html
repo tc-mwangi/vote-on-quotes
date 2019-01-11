@@ -1,26 +1,63 @@
-<!-- like -->
-<div>
-  <a href="">
-
-  </a>
-</div>
-
-<!-- dislike -->
+<!-- display quote-form -->
 
 <div>
-  <a href="">
-
-  </a>
+  {{quote}}
 </div>
+
+<div>
+  {{author}}
+</div>
+
+<div>
+  {{contributor}}
+</div>
+
 
 <!-- like votes counter -->
 
+<div class="value">
+    {{votes}}
+  </div>
+  
+  <div class="label">
+    likes counter
+  </div>
+
+<!-- like vote -->
+
 <div>
-  {{votes}}
+  <ul>
+    <li class="item">
+      <a href (click)="voteLike()">
+        <i>like</i>
+      </a>
+    </li>
+  </ul>
 </div>
+
+<!-- dislike vote -->
+
+<div>
+    <ul>
+      <li class="item">
+        <a href (click)="voteDislike()">
+          <i>dislike</i>
+        </a>
+      </li>
+    </ul>
+</div>
+
+
+
 
 
 <!-- days since quote was posted -->
 <div>
   
 </div>
+
+
+
+    <a href="src/index.html" src="src/assets/social-media-icons/png/014-like.png">
+  
+    </a>

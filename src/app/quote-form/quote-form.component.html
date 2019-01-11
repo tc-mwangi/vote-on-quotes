@@ -1,0 +1,26 @@
+<p>
+  Publish your Quote:
+</p>
+
+<form action="">
+  <!-- quote field -->
+  <div>
+    <label for="quote"> Quote: </label>
+    <input type="text" id="quote" #newQuote placeholder="create quote here">
+  </div>
+
+  <!-- author field -->
+  <div>
+    <label for="author"> Author: </label>
+    <input type="text" id="author" #newAuthor placeholder="author name here">
+  </div>
+
+  <!-- contributor field -->
+  <div>
+    <label for="contributor"> Contributor: </label>
+    <input type="text" id="contributor" #newContributor placeholder="your name here">
+  </div>
+
+  <!-- submit button -->
+  <button (click)="addQuote(newQuote, newAuthor, newContributor)">submit</button>
+</form>

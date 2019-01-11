@@ -1,5 +1,6 @@
 <!-- display quote-form -->
 
+
 <div>
   {{quote}}
 </div>
@@ -16,11 +17,11 @@
 <!-- like votes counter -->
 
 <div class="value">
-    {{votes}}
+    {{voteCounter}}
   </div>
   
   <div class="label">
-    likes counter
+    <p></p>
   </div>
 
 <!-- like vote -->
@@ -29,7 +30,7 @@
   <ul>
     <li class="item">
       <a href (click)="voteLike()">
-        <i>like</i>
+        <img src="../assets/social-media-icons/png/006-feedback.png" alt="like-icon" width="100" height="100">
       </a>
     </li>
   </ul>
@@ -38,16 +39,24 @@
 <!-- dislike vote -->
 
 <div>
-    <ul>
-      <li class="item">
-        <a href (click)="voteDislike()">
-          <i>dislike</i>
-        </a>
-      </li>
-    </ul>
+  <ul>
+    <li class="item">
+      <a href (click)="voteDislike()">
+          <a href (click)="voteLike()">
+              <img src="../assets/social-media-icons/png/014-like.png" alt="like-icon" width="100" height="100">
+            </a>
+      </a>
+    </li>
+  </ul>
 </div>
 
 
+
+
+
+<!-- icon for the best quote -->
+
+<!-- ../assets/social-media-icons/png/006-feedback.png -->
 
 
 
@@ -56,8 +65,3 @@
   
 </div>
 
-
-
-    <a href="src/index.html" src="src/assets/social-media-icons/png/014-like.png">
-  
-    </a>
